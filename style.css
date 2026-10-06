@@ -1,0 +1,639 @@
+/* =====================================================
+   PROFESSIONAL PORTFOLIO WEBSITE CSS
+   Author: Sri Abhinaya Racharla
+   Theme: Modern Dark Developer Portfolio
+===================================================== */
+
+
+/* ================= GLOBAL RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+
+:root {
+
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+
+    --text-color: #ededed;
+
+    --main-color: #00abf0;
+
+    --card-color: #102a3c;
+
+    --shadow-color: rgba(0,171,240,0.3);
+
+}
+
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+
+body {
+
+    background: var(--bg-color);
+
+    color: var(--text-color);
+
+}
+
+
+/* ================= GENERAL SECTION ================= */
+
+
+section {
+
+    min-height: 100vh;
+
+    padding: 10rem 9% 2rem;
+
+}
+
+
+.heading {
+
+    text-align: center;
+
+    font-size: 5rem;
+
+    margin-bottom: 5rem;
+
+    color: var(--text-color);
+
+}
+
+
+.heading::first-letter {
+
+    color: var(--main-color);
+
+}
+
+
+/* ================= BUTTON DESIGN ================= */
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 1.3rem 3rem;
+
+    background: var(--main-color);
+
+    border-radius: 4rem;
+
+    color: #081b29;
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+
+    letter-spacing: .1rem;
+
+    transition: .3s ease;
+
+    cursor: pointer;
+
+}
+
+
+.btn:hover {
+
+    background: transparent;
+
+    color: var(--main-color);
+
+    border: .2rem solid var(--main-color);
+
+    box-shadow: 0 0 2rem var(--shadow-color);
+
+}
+
+
+
+.btn-outline {
+
+
+    display: inline-block;
+
+    padding: 1.3rem 3rem;
+
+    border: .2rem solid var(--main-color);
+
+    border-radius: 4rem;
+
+    color: var(--main-color);
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+
+    margin-left: 1.5rem;
+
+    transition: .3s ease;
+
+
+}
+
+
+.btn-outline:hover {
+
+    background: var(--main-color);
+
+    color: var(--bg-color);
+
+}
+
+
+
+/* ================= HEADER / NAVBAR ================= */
+
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 2rem 9%;
+
+    background: rgba(8,27,41,0.85);
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    font-size: 3rem;
+
+    color: var(--text-color);
+
+    font-weight: 700;
+
+}
+
+
+.logo span {
+
+    color: var(--main-color);
+
+}
+
+
+
+nav a {
+
+    font-size: 1.7rem;
+
+    color: var(--text-color);
+
+    margin-left: 3.5rem;
+
+    transition: .3s;
+
+}
+
+
+
+nav a:hover,
+nav a.active {
+
+    color: var(--main-color);
+
+}
+
+
+
+.menu-btn {
+
+    display: none;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ================= HERO SECTION ================= */
+
+
+.home {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 5rem;
+
+}
+
+
+
+.home-content {
+
+    max-width: 65rem;
+
+}
+
+
+.home-content h3 {
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+}
+
+
+
+.home-content h1 {
+
+    font-size: 6rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+
+.home-content h2 {
+
+    font-size: 3.5rem;
+
+    color: var(--main-color);
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.home-content p {
+
+    font-size: 1.8rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+.buttons {
+
+    margin-bottom: 3rem;
+
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about{
+    background: var(--second-bg-color);
+}
+
+.about-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container p{
+    font-size: 2.6rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+
+.social {
+
+    display: flex;
+
+    gap: 2rem;
+
+}
+
+
+
+.social a {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 4.5rem;
+
+    height: 4.5rem;
+
+    border: .2rem solid var(--main-color);
+
+    border-radius: 50%;
+
+    color: var(--main-color);
+
+    font-size: 2rem;
+
+    transition: .3s;
+
+}
+
+
+
+.social a:hover {
+
+    background: var(--main-color);
+
+    color: var(--bg-color);
+
+    box-shadow: 0 0 2rem var(--main-color);
+
+}
+
+
+
+/* ================= PROFILE IMAGE ================= */
+
+
+.home{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    min-height:100vh;
+}
+
+.home-content{
+    flex:1;
+    max-width:700px;
+}
+
+.home-image{
+    flex:0 0 380px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--main-color);
+    box-shadow:0 0 30px var(--main-color);
+}
+
+/* ================= SKILLS SECTION ================= */
+
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 3rem;
+
+}
+
+
+
+.card {
+
+    background: var(--card-color);
+
+    padding: 3rem;
+
+    border-radius: 2rem;
+
+    text-align: center;
+
+    transition: .3s;
+
+    border: .1rem solid transparent;
+
+}
+
+
+
+.card:hover {
+
+    transform: translateY(-1rem);
+
+    border-color: var(--main-color);
+
+    box-shadow: 0 0 2rem var(--shadow-color);
+
+}
+
+
+
+.card i {
+
+    font-size: 5rem;
+
+    color: var(--main-color);
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.card h3 {
+
+    font-size: 2rem;
+
+}
+
+
+/* ===== END OF PART 1 ===== */
+
+/* ================= PROJECTS ================= */
+
+#projects{
+    background: var(--bg-color);
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.project-card{
+    background: var(--card-color);
+    padding: 2rem;          /* Reduced from 3rem */
+    border-radius: 2rem;
+    border: .2rem solid transparent;
+    transition: .3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--main-color);
+    box-shadow: 0 0 2rem var(--shadow-color);
+}
+
+/* Your HTML uses h1, so style h1 */
+.project-card h1{
+    font-size: 2.5rem;        /* Reduced from 3.2rem */
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+/* If you later use h3, keep this too */
+.project-card h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.project-card p{
+    font-size: 1.5rem;        /* Reduced from 2rem */
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.project-btn{
+    display: inline-block;
+    font-size: 1.5rem;        /* Reduced from 1.8rem */
+    font-weight: 600;
+    color: var(--main-color);
+    transition: .3s ease;
+}
+
+.project-btn:hover{
+    color: #ffffff;
+}
+
+/* ================= EDUCATION ================= */
+
+.timeline{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.timeline-item{
+    background:var(--card-color);
+    padding:3rem;
+    border-radius:2rem;
+    margin-bottom:3rem;
+    transition:.3s ease;
+}
+
+.timeline-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 2rem var(--shadow-color);
+}
+
+.timeline-item h3{
+    font-size:3rem;
+    font-weight:700;
+    color:var(--text-color);
+    margin-bottom:1.5rem;
+}
+
+.timeline-item p{
+    font-size:2rem;
+    line-height:1.8;
+    color:var(--text-color);
+}
+
+
+/* ================= CERTIFICATIONS ================= */
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:3rem;
+}
+
+.cert-card{
+    background:var(--card-color);
+    padding:3rem;
+    border-radius:2rem;
+    text-align:center;
+    font-size:2.2rem;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.cert-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 2rem var(--shadow-color);
+}
+
+
+/* ================= CONTACT ================= */
+
+form{
+    max-width:800px;
+    margin:0 auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:2rem;
+    margin-bottom:2rem;
+    font-size:2rem;
+    color:var(--text-color);
+    background:var(--card-color);
+    border:.2rem solid var(--main-color);
+    border-radius:1rem;
+}
+
+form textarea{
+    resize:none;
+}
+
+form .btn{
+    font-size:2rem;
+    padding:1.5rem 4rem;
+}
